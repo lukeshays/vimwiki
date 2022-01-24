@@ -1,0 +1,14 @@
+= Data Structures and Algorithms =
+[[Glossary]]
+[[Examples]]
+
+== Datastructures ==
+
+== Algorithms ==
+
+=== Sorting Algorithms ===
+    * [[Bubble_sort|Bubble sort]]
+    * [[Quick sort]]
+    * [[Merge sort]]
+    * [[Insertion sort]]
+    * [[Heap sort]]

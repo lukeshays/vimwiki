@@ -1,0 +1,34 @@
+=Quick Sort=
+
+Bubble sort is possibly the simplest sorting algorithm.
+It works by repeatedly swapping adjacent elements if they are in the wrong order.
+
+*Time Complexity*: O(N^2^)
+*Space Complexity*: O(1)
+[[Glossary#Stable|Stable]]: Yes
+*Pros*: Bubble sort is in place so there is little memory overhead.  It is easy to write and understand. If the input is almost sorted already bubble sort approaches linear time complexity.
+*Cons*: Average and worst case time complexity is exponential.
+
+Example:
+
+First Pass:
+( 5 1 4 2 8 ) –> ( 1 5 4 2 8 )   Here, algorithm compares the first two elements, and swaps since 5 > 1
+( 1 5 4 2 8 ) –> ( 1 4 5 2 8 )   Swap since 5 > 4
+( 1 4 5 2 8 ) –> ( 1 4 2 5 8 )   Swap since 5 > 2
+( 1 4 2 5 8 ) –> ( 1 4 2 5 8 )   Now, since these elements are already in order (8 > 5), algorithm does not swap them.
+Second Pass:
+( 1 4 2 5 8 ) –> ( 1 4 2 5 8 )
+( 1 4 2 5 8 ) –> ( 1 2 4 5 8 )   Swap since 4 > 2
+( 1 2 4 5 8 ) –> ( 1 2 4 5 8 )
+( 1 2 4 5 8 ) –> ( 1 2 4 5 8 )
+Now, the array is already sorted, but our algorithm does not know if it is completed. The algorithm needs one whole pass without any swap to know it is sorted.
+Third Pass:
+( 1 2 4 5 8 ) –> ( 1 2 4 5 8 )
+( 1 2 4 5 8 ) –> ( 1 2 4 5 8 )
+( 1 2 4 5 8 ) –> ( 1 2 4 5 8 )
+( 1 2 4 5 8 ) –> ( 1 2 4 5 8 )
+
+[[Examples#Bubble Sort|Python 3 Example]]
+
+Helpful links:
+https://www.geeksforgeeks.org/bubble-sort/
