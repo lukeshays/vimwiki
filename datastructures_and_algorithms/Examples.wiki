@@ -20,3 +20,16 @@ def bubbleSort(arr):
         if swapped == False:
             break
 }}}
+
+*Quick Sort*
+{{{python
+# Easy to read, but not in place version of quick sort
+def quickSort(arr):
+    if len(arr) < 2:
+        return arr
+    else:
+        return
+            quickSort([x for x in arr[1:] if x < arr[0]]) +
+            arr[0] +
+            quickSort([x for x in arr[1:] if x >= arr[0]])
+}}}
